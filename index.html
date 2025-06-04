@@ -33,7 +33,7 @@
             margin-bottom: 10px;
             text-align: center;
             color: #fff;
-            font-family: 'Ubuntu', sans-serif;
+            font-family: 'WarisOver', sans-serif;
             }
             .accordian {
                 background-color: lighten(#2196f3, 9);
@@ -138,14 +138,7 @@
                     .facebook a::after{
                         background-color: rgb(44, 60, 166);
                     }
-                    .github a::before,
-                    .github a::after{
-                        content: '\f09b';
-                    }
-                    .github a::after{
-                        background-color: #000;
-
-                    }
+                    
                     .spotify a::before,
                     .spotify a::after{
                         font-family: "Font Awesome 6 Brands";
@@ -200,6 +193,28 @@
                 }
 
             }
+            .site-header{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                gap: 10px;
+            }
+            .logo-circle{
+                width: 150px;
+                height: auto;
+                border-radius: 50%;
+                
+            }
+
+            @font-face{
+                font-family: 'Warisover';
+                src: url(Fuentes/War\ is\ Over.ttf) format('truetype'); 
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+
+            }
 
            
 
@@ -211,8 +226,9 @@
 
 <body>
     <div class="container">
-    <header>
-    <h1>Siguenos en redes sociales!</h1>
+    <header class="site-header">
+        <img src="logo 3.jpg" alt="logo" class="logo-circle">
+    <h1>SIGUENOS EN REDES SOCIALES! </h1>
     </header>
     <ul class="accordian">
     <li class="tab">
@@ -245,16 +261,7 @@
     <p>Siguenos en Threads</p>
     </div>
     </li>
-    <li class="tab">
-        <div class="social github">
-            <a href="https://www.github.com"
-            target="_blank">Github</a>
-        </div>
-        <div class="content">
-            <h1>Github</h1>
-            <p>Proyecto en Github</p>
-        </div>
-    </li>
+   
     <li class="tab">
         <div class="social spotify">
             <a href="https://open.spotify.com/show/1QIYeM0lKdYOaAgFW88zr6?si=-VFPMe-3TIi9V3YuzWlFWA&nd=1&dlsi=13d6407d06ae4e05"
